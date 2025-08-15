@@ -1,0 +1,319 @@
+# Forex CNN-LSTM-Cross-Attention Project .gitignore
+
+# ============================================================================
+# SENSITIVE DATA & LARGE FILES
+# ============================================================================
+
+# Raw forex data (potentially large and sensitive)
+data/
+data/*.csv
+data/*.xlsx
+data/*.json
+data/*.parquet
+
+# Trained models (large binary files)
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.model
+
+# Experiment results (can be regenerated)
+experiments/
+experiments/*/
+!experiments/.gitkeep
+
+# Model checkpoints and weights
+checkpoints/
+weights/
+saved_models/
+
+# ============================================================================
+# PYTHON ENVIRONMENT
+# ============================================================================
+
+# Virtual environments
+cross-cla/
+forex_env/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.env
+.venv
+
+# Python virtual environments (any name pattern)
+*_env/
+*-env/
+*_venv/
+*-venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# ============================================================================
+# JUPYTER NOTEBOOKS
+# ============================================================================
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Jupyter Notebook outputs (optional - keep if needed for documentation)
+# *.ipynb
+
+# ============================================================================
+# ML/DATA SCIENCE SPECIFIC
+# ============================================================================
+
+# TensorBoard logs (large, can be regenerated)
+logs/
+tensorboard_logs/
+runs/
+lightning_logs/
+
+# MLflow artifacts
+mlruns/
+mlartifacts/
+.mlruns/
+
+# Model artifacts and large outputs
+artifacts/
+outputs/
+models/
+plots/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
+!README_plots/  # Keep documentation plots if any
+
+# Data processing temporary files
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Large numpy/pandas files
+*.npy
+*.npz
+*.feather
+
+# ============================================================================
+# DEVELOPMENT TOOLS
+# ============================================================================
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================================================
+# CONFIGURATION & SECRETS
+# ============================================================================
+
+# Environment variables and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+secrets.json
+config_local.py
+local_config.py
+
+# API keys and credentials
+api_keys.txt
+credentials.json
+*.key
+*.pem
+*.crt
+*.cer
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================================
+# LOGS & TEMPORARY FILES
+# ============================================================================
+
+# Log files
+*.log
+logs/
+log/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# ============================================================================
+# DOCUMENTATION
+# ============================================================================
+
+# Sphinx documentation
+docs/_build/
+.doctrees
+.buildinfo
+
+# LaTeX outputs (if generating PDF reports)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.toc
+*.synctex.gz
+
+# ============================================================================
+# SPECIFIC TO THIS PROJECT
+# ============================================================================
+
+# Experiment-specific ignores
+experiment_*
+test_runs/
+debug_outputs/
+
+# Large feature matrices (can be regenerated)
+features/
+processed_data/
+feature_*.npy
+sequences_*.npy
+
+# Model comparison results
+comparison_results/
+backtest_results/
+
+# Trading simulation outputs
+trading_logs/
+portfolio_history/
+
+# Configuration backups
+config_backup/
+old_configs/
+
+# Performance profiling
+*.prof
+*.profile
+
+# ============================================================================
+# KEEP THESE FILES (Examples)
+# ============================================================================
+
+# Keep essential project files
+!main.py
+!config.py
+!requirements.txt
+!README.md
+!.gitignore
+
+# Keep small sample data for testing (if any)
+!data/sample_data.csv
+!data/README.md
+
+# Keep documentation plots
+!docs/
+!images/
+!screenshots/
+
+# Keep configuration templates
+!config_template.py
+!.env.example
